@@ -8,7 +8,7 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
         alert('Enter Valid Number');
         return;
     }
-    
+
     const depositField = document.getElementById('total-deposit');
     const previousDepositTotalString = depositField.innerText;
     const previousDepositTotal = parseFloat(previousDepositTotalString);

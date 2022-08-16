@@ -18,8 +18,12 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
     const preTotalBalance = parseFloat(preTotalBalanceString)
 
     withdrawField.value = '';
-    if(preTotalBalance < newWithdraw || isNaN() == true){
+    if(preTotalBalance < newWithdraw){
         alert('Please Deposite!! You have not enough balance')
+        return;
+    }
+    if(isNaN(newWithdraw) === true){
+        alert('Enter Valid Number');
         return;
     }
     
